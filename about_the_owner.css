@@ -1,11 +1,11 @@
-#intro { 
+#intro {  
     position: relative; 
     height: 30vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("Jewlery_Pile.JPG");
+    background-image: url("images/jewlery_pile.JPG");
     background-size: cover;
     background-position: center;
 }
