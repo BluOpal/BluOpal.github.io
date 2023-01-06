@@ -1,0 +1,56 @@
+#intro {  
+    position: relative; 
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/jewlery_pile.JPG");
+    background-size: cover;
+    background-position: center;
+}
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#intro div {
+    position: relative;
+    color: #ffffff;  
+    text-align: center;
+}
+.quote {
+    margin: 30px 0;
+    padding: 10px 40px;
+    background-color: #88a7a5;
+}
+#lauraimg {
+    max-width: 30vh;
+    border-radius: 20px;
+}
+.quote p {
+    font-size: 22px;
+    margin-right: 50px;
+    font-style: italic;
+}
+.content h1 {
+    text-align: center;
+}
+.content div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.explanation {
+    max-width: 300px;
+    font-size: 20px;
+    text-indent: 1cm;
+    line-height: 1.6;
+}
+.quote, .content {
+    font-family: 'Raleway', sans-serif;
+}
