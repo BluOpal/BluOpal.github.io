@@ -44,8 +44,41 @@ nav ul li a:hover {
     transform: translateY(-5px);
     text-decoration: underline;
 }
-.content-margin {
-    margin: 7vh 70px;
+.staticimg {
+    position:absolute;
+    background-color: #36454f;
+}
+.staticimg:hover {
+    opacity:0;
+}
+#intro {
+    position: relative; 
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/jewlery_pile.JPG");
+    background-size: cover;
+    background-position: center;
+} 
+#intro::before {                      
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#intro h1 {
+    position: relative;
+    color: #ffffff;  
+    text-align: center;
+}
+.content {
+    margin: auto;
+    max-width: 1100px;
 }
 .flex {
     display: flex; 
@@ -61,41 +94,12 @@ nav ul li a:hover {
 .flex.center {
     justify-content: center;
 }
-.block {
-    margin: 5vh 5px;
-    background-color: #70746c;
-    width: 60vh;
-    height: auto;
-    /* overflow: hidden; */
-    border-radius: 10px;
-    text-align: center;
-}
-.block p {
-    font-size: 21px;
-    color: #141b1f;
-}
-.block img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-}
-.block p, a {
-    margin: 15px;
-}
-.block a {
-    padding: 10px;
-    display: inline-block;
-    background-color: red;
-    color: #000000;
-}
 .description {
     max-width: 500px;
 }
 footer {
     border-top: 8px solid #36454f;
     background-color: #212b31;
-    margin: 0;
-    height: 100%;
 }
 footer ul {
     display: flex;
