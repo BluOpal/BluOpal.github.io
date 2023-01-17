@@ -15,6 +15,10 @@ nav {
     background: #36454f;
     padding: 0 50px;
 }
+nav img {
+    width: 100px;
+    padding: 15px;
+}
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -51,9 +55,9 @@ nav ul li a:hover {
 .staticimg:hover {
     opacity:0;
 }
-#intro {
+#title {
     position: relative; 
-    height: 30vh;
+    height: 185px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -62,7 +66,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
 } 
-#intro::before {                      
+#title::before {                      
     content: "";
     position: absolute;
     top: 0px;
@@ -71,7 +75,7 @@ nav ul li a:hover {
     left: 0px;
     background-color: rgba(0, 0, 0, 0.75);
 }
-#intro h1 {
+#title h1 {
     position: relative;
     color: #ffffff;  
     text-align: center;

@@ -1,4 +1,5 @@
-.title { 
+.companyTitle
+ { 
     background-color: #88a7a5;
     text-align: center;
     font-family: 'Nova Mono', monospace;
@@ -57,13 +58,13 @@ h1, h3 {
 #lauraimg {
     width: 300px;
 }
-.content {
+#content {
     text-align: center;
 }
 .quote p {
     max-width: 500px;
     border-radius: 0 20px 20px 20px;
-    border: #556c7c solid;
+    border: solid #556c7c;
     padding: 20px;
     margin: 30px;
     font-style: italic;
@@ -94,7 +95,7 @@ h1, h3 {
 }
 .block h2 {
     color: #36454f;
-    /* font-size: px; */
+    margin: 0 0 25px;
 }
 .reverse {
     flex-direction: row-reverse;

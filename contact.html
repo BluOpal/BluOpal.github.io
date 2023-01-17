@@ -10,10 +10,11 @@
 <script src="https://kit.fontawesome.com/3343463b9c.js" crossorigin="anonymous"></script>
 
 <script>
+	const $ = id => document.getElementById(id)
 	const sendMail = () => {
-		let clientEmail = document.getElementById('clientEmail').value;
-		let subject = document.getElementById('subject').value;
-		let message = document.getElementById('message').value;
+		let clientEmail = $('clientEmail').value;
+		let subject = $('subject').value;
+		let message = $('message').value;
 		let link = `mailto:blueopal589@gmail.com?cc=${clientEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 		window.open(link, "_blank")
 	}
@@ -35,7 +36,7 @@
 		</nav>
 	</header>
 
-	<div id="intro">
+	<div id="title">
 		<h1>Contact</h1>
 	</div>
 
