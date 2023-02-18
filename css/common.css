@@ -11,7 +11,6 @@ header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, .10);
 }
 nav {
-    /* background: #c1ceca; */
     background: #36454f;
     padding: 0 50px;
 }
@@ -30,10 +29,9 @@ nav ul {
 }
 nav li {
     list-style: none;
-    padding: 0 20px;
+    padding: 20px 20px;
     font-size: 17px;
     color: #ffffff;
-    /* color: #212b31; */
 }
 nav ul li.active {
     text-decoration: underline;
@@ -62,7 +60,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("images/jewlery_pile.JPG");
+    background-image: url("../images/jewlery_pile.JPG");
     background-size: cover;
     background-position: center;
 } 
@@ -80,10 +78,6 @@ nav ul li a:hover {
     color: #ffffff;  
     text-align: center;
 }
-.content {
-    margin: auto;
-    max-width: 1100px;
-}
 .flex {
     display: flex; 
     flex-wrap: wrap;
@@ -98,12 +92,12 @@ nav ul li a:hover {
 .flex.center {
     justify-content: center;
 }
-.description {
-    max-width: 500px;
+.flex.flex-start {
+    align-items: flex-start;
 }
 footer {
-    border-top: 8px solid #36454f;
-    background-color: #212b31;
+    border-top: 8px solid #1d282e;
+    background-color: #0b0f11;
 }
 footer ul {
     display: flex;
@@ -127,7 +121,8 @@ footer a:hover{
     text-decoration: none;
 }
 footer h6 {
-    color: #36454f;
+    font-family: 'Nova Mono', monospace;
+    color: #1d282e;
     margin: 0;
     padding:0px 20px;
     font-size: 15px;

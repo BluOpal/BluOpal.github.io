@@ -1,0 +1,90 @@
+.path {
+    margin: 30px 40px 0;
+    font-size: 18px;
+}
+.path a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.path a:hover {
+    text-decoration: underline;
+}
+.path i {
+    font-size: 15px;
+}
+#content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.product {
+    align-items: flex-start;
+}
+.product img {
+    margin-right: calc(100% - (420px + 350px));
+    width: 420px;
+    border-radius: 15px;
+}
+.product div {
+    width: 350px;
+}
+.product h1 {
+    margin-bottom: 0;
+}
+.product h2 {
+    margin-top: 5px;
+    font-size: 17px;
+    color: #444444;
+}
+.product h3 {
+    margin-top: 50px;
+}
+.product h4 {
+    margin: 7px 0;
+}
+.product p {
+    margin-top: 20px;
+}
+.product a {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: #000000;
+    border-radius: 25px;
+    border-style: solid;
+    text-decoration: none;
+    transition: transform .2s cubic-bezier(.235,0,.05,.95);
+    background-color: #ffffff;
+}
+.product a:hover {
+    transform: scale(1.1);
+}
+.related-products {
+    margin: auto;
+}
+.related-products h2{
+    margin: 80px 0 20px;
+    text-align: center;
+}
+.item {
+    width: 280px;
+    text-align: left;
+}
+.item a {
+    text-decoration: none;
+    width: 0;
+    height: 0;
+    color: #000000;
+}
+.item img {
+    border-radius: 15px;
+    width: 100%;
+}
+.item h4, .item p {
+    margin: 10px 0 10px 10px;
+    font-size: 18px;
+}
+.item a:hover {
+    text-decoration: underline;
+}
