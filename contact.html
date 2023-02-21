@@ -9,18 +9,9 @@
 <link rel="stylesheet" href="./css/contact.css">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Prompt:wght@200&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="./images/blue_opal_jewelry_logo.png">
-<script src="https://kit.fontawesome.com/3343463b9c.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3343463b9c.js" crossorigin="anonymous"></script> <!-- Icons by Font Awesome -->
 
-<script>
-	const $ = id => document.getElementById(id)
-	const sendMail = () => {
-		let clientEmail = $('clientEmail').value;
-		let subject = $('subject').value;
-		let message = $('message').value;
-		let link = `mailto:blueopal589@gmail.com?cc=${clientEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-		window.open(link, "_blank")
-	}
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> <!-- Jquery Installation -->
 
 </head>
 <body>
@@ -42,23 +33,24 @@
 		<h1>Contact</h1>
 	</div>
 
-	<div class="form">
+	<form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfycgSMcBXKNBmaSal6sJEbx1ZdRUUHPwZcWH2mupGvt_rKQQ/formResponse?" target="hidden_iframe" onsubmit="formSubmitted();">
+		First name:<br>
+		<input type="text" name="entry.1933236094" id="entry.1933236094">
+		
+		Last name:<br>
+		<input type="text" name="entry.1374953484" id="entry.1374953484">
+		
+		E-mail:<br>
+		<input type="text" name="entry.707930732" id="entry.707930732">
 
-		<h2>Send an E-mail</h2>
+		Message:<br>
+		<textarea cols="30" rows="10" autocomplete="off" name="entry.298209136" id="entry.298209136"></textarea>
 
-		<label for="clientEmail">Email:</label>
-		<input type="text" name="clientEmail" id="clientEmail" placeholder="youremail@example.com" autocomplete="email">
+		<input id="submit" type="submit" value="Submit">
+	</form>
 
-		<label for="subject">Subject:</label>
-		<input type="text" name="subject" id="subject" placeholder="Your concerns." autocomplete="off">
-
-		<label for="message">Message:</label>
-		<textarea name="message" id="message" cols="30" rows="10" placeholder="State your concerns." autocomplete="off"></textarea>
-
-		<button onclick="sendMail(); return false">Send</button>
-
-	</div>
-
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+	
 	<footer>
 		<div class="flex space-between">
 			<ul>
@@ -71,5 +63,14 @@
 			<h6>Blue Opal</h6>
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		function formSubmitted() {
+			document.getElementById('submit').value = 'Message Submitted';
+			setTimeout(() => {
+				document.getElementById('submit').value = 'Submit';
+			}, 3000)
+		}
+	</script>
 </body>
 </html>

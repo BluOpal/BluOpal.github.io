@@ -1,16 +1,11 @@
-.companyTitle { 
+#companyTitle { 
     background-color: #88a7a5;
     text-align: center;
-    font-family: 'Nova Mono', monospace;
+    font-family: 'Nova Mono', monospace; /* Nova Mono created by Wojciech Kalinowski */
     color: #212b31;
     font-size: 30px;
     padding: 20px;
     font-weight: 300;
-}
-h2 {
-    margin: 80px 0 30px;
-    text-align: center;
-    font-size: 30px;
 }
 #hero { 
     position: relative; 
@@ -21,6 +16,11 @@ h2 {
     background-image: url("../images/jewelry_pile.JPG");
     background-size: cover;
     background-position: center;
+}
+h2 {
+    margin: 80px 0 30px;
+    text-align: center;
+    font-size: 30px;
 }
 #hero::before {
     content: "";

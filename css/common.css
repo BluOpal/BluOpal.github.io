@@ -11,7 +11,7 @@ header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, .10);
 }
 nav {
-    background: #36454f;
+    background-color: #36454f;
     padding: 0 50px;
 }
 nav img {
@@ -121,7 +121,7 @@ footer a:hover{
     text-decoration: none;
 }
 footer h6 {
-    font-family: 'Nova Mono', monospace;
+    font-family: 'Nova Mono', monospace; /* Nova Mono created by Wojciech Kalinowski */
     color: #1d282e;
     margin: 0;
     padding:0px 20px;
