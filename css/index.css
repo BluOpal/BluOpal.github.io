@@ -110,8 +110,12 @@ h2 {
 }
 .item a {
     text-decoration: none;
+    color: #000000;
     width: 0;
     height: 0;
+}
+.item a:hover {
+    text-decoration: underline;
 }
 .item img {
     border-radius: 15px;
@@ -121,9 +125,6 @@ h2 {
     margin: 10px 0 10px 10px;
     font-size: 18px;
     color: #000000;
-}
-.item h4:hover {
-    text-decoration: underline;
 }
 .contact-hero{
     width: 100%;
